@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8" />
+		<link rel = "stylesheet" type = "text/css" href = "style.css" />
+		<script type = "text/javascript" src = "scripts.js"></script>
+		<link rel = "preconnect" href = "https://fonts.gstatic.com" />
+		<link href = "https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel = "stylesheet" />
+		<title>Contact</title>
+	</head>
+	
+	<body>
+		
+		<span id = "marquee">
+			<img class = "dobra-pozadina" src = "img/testbg.png" alt = "background" />
+		</span>
+		<main>
+			
+			<span id = "navbar-container">
+				<span id = "nezumi-container" onmouseover = "mouse_smile()" onmouseleave = "mouse_normal()">
+					<span id = "nezumi-head">
+						<span class = "nezumi-eye"></span>
+						<span class = "nezumi-eye"></span>
+						<span class = "nezumi-eyelid"></span>
+						<span class = "nezumi-eyelid"></span>
+						<span class = "nezumi-whisker" data-epos = "l1"></span>
+						<span class = "nezumi-whisker" data-epos = "l2"></span>
+						<span class = "nezumi-whisker" data-epos = "l3"></span>
+						<span class = "nezumi-whisker" data-epos = "r1"></span>
+						<span class = "nezumi-whisker" data-epos = "r2"></span>
+						<span class = "nezumi-whisker" data-epos = "r3"></span>
+						
+						<span id = "nezumi-snout"></span>
+					</span>
+					<span class = "nezumi-ear"></span>
+					<span class = "nezumi-ear"></span>
+					
+					<span id = "nezumi-text">The Hungry Rat</span>
+				</span>
+				<span id = "navbar">
+					<a href = "index.html">Home</a>
+					<a href = "menu.html">Menu</a>
+					<a href = "contact.html">Contact</a>
+					<a href = "reviews.html">Reviews</a>
+				</span>
+			</span>
+			
+			<div id = "pg-content">
+				<p class = "veliki_sef">CONTACT</p>
+				<p>Have some feedback or a suggestion? Feel free to let us know! If you leave a detailed review that we feel accentuates the qualities of our restaurant, it may be featured on the “Reviews” page.</p>
+				
+				<form onsubmit = "send()" id = "contact-form">
+					<label for = "name">Name:</label><br />
+					<input type = "text" id = "name" name = "name" required /><br />
+					<label for = "email">Email:</label><br />
+					<input type = "email" id = "email" name = "email" required /><br />
+					<label for = "msg">Message:</label><br />
+					<textarea id = "msg" name = "msg" rows = "20" cols = "30" required ></textarea><br />
+					<input type = "submit" value = "Send" id = "dugmence" />
+				</form>
+			</div>
+		</main>
+	</body>
+</html>
